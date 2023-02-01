@@ -1,6 +1,6 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('blog_posts', {
+    return queryInterface.createTable('blog_posts', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -39,9 +39,6 @@ module.exports = {
   },
 
   down: async (queryInterface, _Sequelize) => {
-    await queryInterface.dropTable('blog_posts');
+    return queryInterface.dropTable('blog_posts');
   }
 };
-//   published: new Date('2011-08-01T19:58:00.000Z'),
-//   updated: new Date('2011-08-01T19:58:51.000Z'),
-// },

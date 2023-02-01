@@ -1,6 +1,6 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable('posts_categories', {
+    return queryInterface.createTable('posts_categories', {
       post_id: {
         type: Sequelize.INTEGER,
         field: 'post_id',
@@ -27,9 +27,6 @@ module.exports = {
   },
 
   down: async (queryInterface, _Sequelize) => {
-    await queryInterface.dropTable('posts_categories');
+    return queryInterface.dropTable('posts_categories');
   }
 };
-//   published: new Date('2011-08-01T19:58:00.000Z'),
-//   updated: new Date('2011-08-01T19:58:51.000Z'),
-// },
