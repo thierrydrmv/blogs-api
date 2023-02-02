@@ -6,6 +6,11 @@ const newUserSchema = Joi.object({
   password: Joi.string().min(6).required(),
 });
 
+const newCategorySchema = Joi.object({
+  name: Joi.string().min(4).required(),
+});
+
 module.exports = {
   newUserSchema,
+  newCategorySchema,
 };
