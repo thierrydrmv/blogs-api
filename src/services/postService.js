@@ -13,4 +13,15 @@ const getPostById = async (id) => {
   return post;
 };
 
-module.exports = { getPostById };
+const getPosts = async () => {
+  const post = await BlogPost.findAll({
+    include: [
+      { model: User, as: 'user', attributes: { exclude: 'password' } },
+      { model: Category, as: 'categories', through: { attributes: [] } },
+    ],
+  });
+
+  return post;
+};
+
+module.exports = { getPostById, getPosts };

@@ -23,6 +23,8 @@ app.get('/categories', validateJWT, err, categoryController.getAllCategories);
 
 app.post('/categories', validateJWT, err, categoryController.createNewCategory);
 
+app.get('/post', validateJWT, err, postController.getPosts);
+
 app.get('/post/:id', validateJWT, err, postController.getPostById);
 
 module.exports = app;
