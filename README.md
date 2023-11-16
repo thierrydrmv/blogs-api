@@ -2,7 +2,7 @@
 
 ## 📝 About
 
-The project **Blogs Api** is a web page that accesses the Mercado Livre API and simulates an e-commerce for selling computer parts, using localstorage to simulate a shopping cart.
+The project **Blogs Api** is a RESTful API for blog management built with Node.js and Sequelize to provide efficient and scalable blog management functionalities.
 
 ## 🚀 Built With
 
