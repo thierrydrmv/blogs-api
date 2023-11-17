@@ -12,10 +12,12 @@ The project **Blogs Api** is a RESTful API for blog management built with Node.j
 
 In this project, I was able to:
 
-- Make requests to a Mercado Livre API (Application Programming Interface);
-- Use your knowledge of JavaScript, CSS and HTML;
-- Work with asynchronous functions;
-- Implement unit tests.
+- Develop a CRUD API:
+  - Create
+  - Read
+  - Update
+  - Delete
+- Use Sequelize ORM to manipulate a MySQL database.
   
 ## ⬇️ Installing dependencies
 
